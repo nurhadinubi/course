@@ -4,7 +4,7 @@ Berisi Tugas project dari Progate & Kominfo 2020
 **Dibuat Oleh:**
 
 - [x] Jeny Ramadhani
-- [x] Nurhadi
+- [x] [Nurhadi](https://www.instagram.com/nurhadinubi)
 - [x] Petrus Darius
 - [x] Ridwan Abdullah
 
