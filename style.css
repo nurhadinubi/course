@@ -95,6 +95,7 @@ li a:hover {
 .fixed .search{
     font-size: 16px;
     border: 1px solid #646464;
+    cursor: pointer;
 }
 /* End of Nav (And Footer partially) */
 
@@ -151,30 +152,60 @@ background-color: #eeeeee;
 }
 .brand-item {
     display: flex;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
 }
 
 .cards {
     padding: 30px 0;
     display: flex;
+    justify-content: space-around;
 }
 
 .card {
-    max-width: 23%;
+    max-width: 20%;
     padding: 10px 1%;
+    cursor: pointer;
 }
-.card>img{
-    border-radius: 50%;
+
+ .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    margin-top: 2%;
+}
+.team .card>img{
     padding-bottom: 10px;
+}
+.card:hover {
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.6);
 }
 
 .card-container {
     padding-top: 10px;
     border-top: 1px solid #ddd;
 }
+.card-container p.center {
+    padding-bottom: 3px;
+}
 .card-container >*{
     margin: 0;
 }
+
+.card-container ul{
+    display: flex;
+    justify-content: center;
+}
+.card-container ul a{
+    padding: 5px 10px;
+    color: #646464;
+}
+
+#tekonolog .card {
+    max-width: 15%;
+}
+
 
 /* Footer */
 
@@ -214,7 +245,7 @@ footer.footer{
 @media only screen and (max-width: 600px) {   
     .container {
         padding: 0 10px !important;
-        font-size: 0.8em;
+       
     }
     .fixed .container,.fixed .kiri ,.footer .container {
         display: inherit;
@@ -265,7 +296,7 @@ footer.footer{
     }
 
     .card-container >*{
-        font-size: 1.3em;
+        font-size: 0.9em;
         padding: 4px 0;
     }
 
@@ -331,4 +362,5 @@ footer.footer{
         max-width: 48%;
         padding: 1%;
     }
+
 }
